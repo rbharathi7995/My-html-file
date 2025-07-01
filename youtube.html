@@ -2,10 +2,174 @@
 <html> 
     <head>
         <title>YouTube.thumbnail</title>
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            .p{
+                font-family:Roboto,arial;
+                margin-top:0;
+                margin-bottom:0;
+            }
+            .thumbnail{
+                width:100%;
+                height:250px;
+                
+            }
+            .search-bar{
+                font-size:20px;
+                margin-left:2px;
+                display:block;
+            }
+            .main{
+                margin-top: 0;
+                font-size:20px;
+                font-weight:500;
+                line-height:25px;
+                margin-bottom:12px;
+            
+           }
+           .video-grid-info{
+            display: grid;
+            grid-template-columns:50px 1fr;
+           }
+  
+          .profile-picture{
+            width:40px;
+            height:35px;
+            border-radius:50px;
+            
+          }
+          .thumbnail-row{
+            margin-bottom:12px;
+          }
+          .author{
+            font-size:14px;
+            color:rgb(96,96,96);
+            height:3px;
+            
+          }
+          .Status{
+            font-size:14px;
+            color:rgb(96,96,96);
+          }
+        .video-grid{
+             display:grid;
+             grid-template-columns:1fr 1fr 1fr;
+             column-gap:16px;
+             row-gap:40px;
+             
+            }
+        </style>
     </head>
     <body>
-    <img src="thumbnails/thumbnail-1.webp">
+    <input class="search-bar" type="text" placeholder="search">
+    <div class="video-grid">
+    <div class="video-preview">
+    <div class="thumbnail-row">
+    <img class="thumbnail"src="thumbnail-1.webp">
+    </div>
+    <div class="video-grid-info">
+    <div class="channel-picture">
+    <img class="profile-picture"src="channel-1.jpeg">
+    </div>
+
+    <div class="video-info">
+    <p class="main">Talking Tech and AI with Google CEO Sundhar pichai!</p>
+    <p class="author">Marques Brownle</p>
+    <p class="Status">3.4M views &#183; 6 months ago;
+      </div>
+</div>
+</div>
+
+    <div class="video-preview">
+        <div class="thumbnail-row">
+        <img class="thumbnail"src="thumbnail-2.webp">
+        </div>
+        <div class="video-grid-info">
+            <div class="channel-picture">
+            <img class="profile-picture" src="channel-2.jpeg">
+        </div>
+        <div class="video-info">
+        <p class="main">Try not to laugh challenge #9</p>
+        <p class="author">Markiplier</p>
+        <p class="status">19M views.4 years ago</p>
+        </div>
+    </div>
+    </div>
+      
+<div class="video-preview">
+    <div class="thumbnail-row">
+        <img class="thumbnail"src="thumbnail-1.webp">
+        </div>
+        <div class="video-grid-info">
+        <div class="channel-picture">
+            <div class="profile-picture" src="channel-1.jpeg">
+        </div>
+        <div class="video-info">
+            <p class="main">Try not to laugh</p>
+            <p class="author">markhjd</p>
+            <p class="Status">6m views</p>
+        </div>
+        </div>
+        </div>
+
+     <div class="video-preview">
+         <div class="thumbnail-row">
+            <img class="thumbnail"src="thumbnail-1.webp">
+         </div>  
+           <div class="video-grid-info">
+            <div class="channel-picture">
+            <div class="profile-picture"src="channel-1.jpeg">
+               </div>
+                <div class="video-info">
+            <p class="main">try not to laugh</p>
+            <p class="author">ghu</p>
+            <p class="Status">16m views</p>
+                </div>
+         </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail-1.webp">
+            </div>
+            <div class="video-grid-info">
+        <div class="channel-picture">
+            <div class="profile-picture" src="channel-2.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="main">try not to laugh</p>
+                    <p class="author">mafsu</p>
+                    <p class="Status">16M views</p>                
+            </div>
+
+        </div>
+        </div>
+
+        <div class="video-preview">
+            <div class=""thumbnail-row">
+                <img class="thumbnail" src="thumbnail-2.webp">
+                </div>
+         <div class="video-grid-info">
+            <div class="channel-picture">
+                <div class="profile-picture" src="channel-1.jpeg">
+
+                </div>
+                <div class="video-info">
+                    <p class="main">try not to laugh</p>
+                    <p class="author">hsjdj</p>
+                    <p class="Status">12m views</p>
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    
     
     </body>
     
