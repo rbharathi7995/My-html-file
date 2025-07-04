@@ -5,18 +5,212 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/general.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/video.css">
+    <style>
+  .p{
+      font-family:Roboto,arial;
+   margin-top:0;
+  margin-bottom:0;
+  }
+  .body{
+    margin:0;
+ height:3000px;
+
+   padding-top:80px;
+  }
+   .thumbnail{
+   width:100%;
+    height:250px;
+                                     
+
+   }
+    .main{
+     margin-top: 0;
+     font-size:20px;
+     font-weight:500;
+     line-height:25px;
+    margin-bottom:12px;       
+  }
+     .video-grid-info{
+    display: grid;
+  grid-template-columns:50px 1fr;
+   }
+.profile-picture{
+width:40px;
+ height:35px;
+  border-radius:50px;
+                                                                 
+  }
+    .thumbnail-row{
+       margin-bottom:12px;
+  }
+  .author{
+       font-size:14px;
+     color:rgb(96,96,96);
+     }
+ .Status{
+ font-size:14px;
+ color:rgb(96,96,96);
+ }
+ .video-grid{
+  display:grid;
+ grid-template-columns:1fr 1fr 1fr;
+   column-gap:16px;
+ row-gap:40px;
+ margin-top: 80px;
+ margin-left:70px;
+
+  }
+  .header{
+    height:55px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position:fixed;
+    background-color: white;
+    top:0px;
+    left:0px;
+    right:0px;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(228,228,228);
+    
+
+
+  }
+  .left-section{
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .middle-section{
+    
+    flex:1;
+    max-width: 500px;
+    margin-left:75px;
+    margin-right:35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+  }
+  .right-section{
+    width:180px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:6px;
+    
+    
+
+  }
+  
+.bars{
+    height:24px;
+    margin-left: 24px;
+    margin-right:24px;
+    
+
+}
+.Youtube{
+    height:24px;
+}
+.search-bar{
+    width:400px;
+    height:35px;
+    border-color:rgb(192,192,192);
+    border-style: solid;
+    box-shadow:inset 0px 1px 3px rgba(0,0,0,0.05);
+    border-radius: 1px;
+    font-size: 16px;
+}
+.search-bar::placeholder{
+    font-family:Roboto,arial;
+    font-size:16px;
+    margin-left:5px;
+
+}
+.button{
+    width:60px;
+    height:40px;
+    border-color:rgb(192,192,192);
+    border-style:solid ;
+    margin-left:-1px;
+    margin-right:10px;
+
+
+}
+.search-icon{
+    margin-top:4px;
+    height:14px;
+}
+.voice-button{
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    background-color:rgb(248,258,248);
+    border:none;
+}
+.voice{
+    margin-top:4px;
+    height:20px;
+}
+.upload{
+    height:24px;
+}
+   .apps{
+    height:24px;
+   }     
+   .notifications{
+    height:24px;
+   }
+   .pic{
+    height:24px;
+   }
+   .sidebar{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    top:55px;
+    width:55px;
+    background-color:white;
+    border-right-width:1px;
+    border-right-style:solid;
+    border-right-color:rgb(228,228,228);
+
+   }
+    </style>
 
     </head>
     <body>
         <div class="header">
-            <div class="left-section">leftside</div>
-            <div class="middle-section"></div>
+            <div class="left-section">
+                <img class="bars" src="icons/hamburger-menu.svg">
+                <img class="Youtube" src="icons/youtube-logo.svg">
+            </div>
+            <div class="middle-section">
+
     <input class="search-bar" type="text"placeholder="search">
+    <button class="button">
+    <img class="search-icon" src="icons/search.svg">
+    </button>
+    <button class="voice-button">
+    <img class="voice" src="icons/voice-search-icon.svg">
+    </button>
+
         </div>
-        <div class="right-section">rightside</div>
+        <div class="right-section">
+     <img class="upload" src="icons/upload.svg">
+     <img class="apps" src="icons/youtube-apps.svg">
+     <img class="notifications" src="icons/notifications.svg">
+     <img class="pic" src="icons/my-channel.jpeg">
+        </div>
+        </div>
+        <div class="sidebar">
+            
+
         </div>
     <div class="video-grid">
     <div class="video-preview">
@@ -31,10 +225,12 @@
     <div class="video-info">
     <p class="main">Talking Tech and AI with Google CEO Sundhar pichai!</p>
     <p class="author">Marques Brownle</p>
-    <p class="Status">3.4M views &#183; 6 months ago;
+    <p class="Status">3.4M views &#183; 6 months ago;</p>
       </div>
+
 </div>
 </div>
+
 
     <div class="video-preview">
         <div class="thumbnail-row">
