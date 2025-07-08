@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My amazon project</title>
+        <style>
+            .body{
+                font-family:roboto, arial;
+            }
+            .container{
+                display:grid;
+                width:200px;
+                
+                margin-left: 5px;;
+                margin-bottom: 5px;
+                border-color:gray;
+            }
+            .thumbnail{
+                width:160px;
+                height:140px;
+                align-items: center;
+               margin-left:10px;
+               margin-right:10px;
+                object-fit: cover;
+                object-position: center;
+                margin-bottom:10px;
+            }
+            .info{
+                font-size:18px;
+                margin-bottom:10px;
+                
+
+            }
+            .star-info{
+                display:flex;
+                flex-direction:row;
+                flex:1;
+                margin-bottom:10px;
+                
+            }
+            .stars{
+                display: inline-block;
+            }
+           .count{
+           color:lightblue;
+           display: inline-block;
+           }
+           .price{
+            margin-bottom:10px;
+            margin-top:10px;
+           }
+           .button{
+            background-color:gray;
+            border-style:solid;
+            box-shadow:1px 2px 3px rgba(0,0,0,0.3);
+
+           }
+           .quantity{
+            width:40px;
+            margin-bottom:40px;
+            border-radius:4px;
+            border-style:solid;
+           }
+           .cart{
+            padding:10px 50px 10px 50px;
+            background-color: yellow;
+            color:black;
+            border-radius:30px;
+            
+           }
+             
+        
+        </style>
+    </head>
+    <body class="body">
+        <div class="container">
+          <div>
+          <img class="thumbnail" src="pics/athletic-cotton-socks-6-pairs.jpg">
+          </div>
+          <div class="info">Black and Gray Athletic Cotton socks- 6pairs</div>
+          <div claas="star-info">
+            <img class="stars" src="pics/rating-45.png">
+            <div class="count">87</div>
+          </div>
+          <div class="price">$10.90</div>
+          <button class="quantity">1</button>
+          <div class="cart">Add to Cart</div>
+        </div>
+    </body>
+</html>
